@@ -1,0 +1,63 @@
+﻿<style>
+    .buttonCreate {
+        position: relative;
+        border: solid;
+        border-color: #00ff90;
+        font-size: 15px;
+        color: #000000;
+        padding: 5px;
+        width: 100px;
+        text-align: center;
+        transition-duration: 0.4s;
+        text-decoration: wavy;
+        overflow: hidden;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+    .buttonEdit {
+        position: relative;
+        border: solid;
+        border-color: #ff6a00;
+        font-size: 15px;
+        color: #000000;
+        padding: 5px;
+        width: 100px;
+        text-align: center;
+        transition-duration: 0.4s;
+        text-decoration: wavy;
+        overflow: hidden;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+</style>
+<div>
+    <h1>Welcome to JayFashio dashboard</h1>
+    ...
+</div>
+<div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tr>
+            <td>Users</td>
+            <td><a class="buttonCreate" href="/AdminDashboard/CreateUser"> Add a new user</a></td>
+            <td><a class="buttonEdit" href="/AdminDashboard/EditUsers"> Edit Users</a></td>
+        </tr>
+        <tr>
+            <td>Items</td>
+            <td><a class="buttonCreate" href="/AdminDashboard/CreateItem"> Add a new item</a></td>
+            <td><a class="buttonEdit" href="/AdminDashboard/EditItems"> Edit Items</a></td>
+        </tr>
+        <tr>
+            <td>Images</td>
+            <td><a class="buttonCreate" href="/AdminDashboard/CreateImage"> Add a new Image</a></td>
+            <td><a class="buttonEdit" href="/AdminDashboard/EditImages"> Edit Images</a></td>
+        </tr>
+    </table>
+
+</div>

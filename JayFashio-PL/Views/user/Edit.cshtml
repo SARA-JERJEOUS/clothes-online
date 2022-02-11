@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@model JayFashio_M.User
+
+
+
+@using (Html.BeginForm())
+{
+
+
+
+    <div>
+        @Html.LabelFor(x => x.Username)
+        @Html.EditorFor(x => x.Username)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Password)
+        @Html.EditorFor(x => x.Password)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Email)
+        @Html.EditorFor(x => x.Email)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.DateOFbirth)
+        @Html.EditorFor(x => x.DateOFbirth)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.Role)
+        @Html.EditorFor(x => x.Role)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Address1)
+        @Html.EditorFor(x => x.Address1)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Address2)
+        @Html.EditorFor(x => x.Address2)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.FirstName)
+        @Html.EditorFor(x => x.FirstName)
+    </div>
+
+
+    <div>
+        @Html.LabelFor(x => x.LastName)
+        @Html.EditorFor(x => x.LastName)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.Location.CityName)
+        @Html.EditorFor(x => x.Location.CityName)
+    </div>
+
+
+
+    <button type="submit" class="btn btn-sm btn-success">  save </button>
+
+}

@@ -1,0 +1,9 @@
+﻿@model List<JayFashio_M.Item>
+@foreach (var item in Model)
+{
+
+    string myPath = item.PathImage;
+    <img src="@Url.Content(myPath.ToString())" style="width:100px;height:100px;" alt="Alternate Text" />
+    <img src="@Url.Content(myPath.ToString())" style="width:100px;height:100px;" alt="Alternate Text" />
+    //<img src="@Url.Content(Model[0].PathImage)" alt="Alternate Text" />
+}

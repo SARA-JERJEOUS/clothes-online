@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="~/first.css" rel="stylesheet" />
+
+    <link href="css/change.css" rel="stylesheet" />
+    <link href="~/style/change.css" rel="stylesheet" />
+    <link href="~/styleonne/st.css" rel="stylesheet" />
+
+
+
+    <title>jay fashio </title>
+    <style>
+
+
+        .carousel-inner > .item > img {
+            height: 480px;
+            width: 100%;
+        }
+
+        .top {
+            top: -20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-default  ">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#click" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+
+                </button>
+                <a class="navbar-brand" href="#">Jay Fashio</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="click">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sales</a>
+
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Men</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hoodies</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">T-Shirt</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Women</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hoodies</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">T-Shirt</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hoodies</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">T-Shirt</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Privacy & Policies</a>
+
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account   <span class="glyphicon glyphicon-user"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/User/View">Login</a></li>
+                            <li><a href="#">Register</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container--->
+    </nav>
+
+    @RenderBody()
+<footer>
+    <h1>Footer</h1>
+</footer>
+</body>
+
+</html>

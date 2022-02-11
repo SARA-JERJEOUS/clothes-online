@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9A73B32-6EE9-47D5-A63E-23CAC33B5354}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JayFashio_M</RootNamespace>
+    <AssemblyName>JayFashio-M</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="added.cs" />
+    <Compile Include="category.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Migrations\202112021528072_InitialCreate.cs" />
+    <Compile Include="Migrations\202112021528072_InitialCreate.designer.cs">
+      <DependentUpon>202112021528072_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112021538492_m1.cs" />
+    <Compile Include="Migrations\202112021538492_m1.designer.cs">
+      <DependentUpon>202112021538492_m1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112021606265_m11.cs" />
+    <Compile Include="Migrations\202112021606265_m11.designer.cs">
+      <DependentUpon>202112021606265_m11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112021609256_m12.cs" />
+    <Compile Include="Migrations\202112021609256_m12.designer.cs">
+      <DependentUpon>202112021609256_m12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112071606288_m2.cs" />
+    <Compile Include="Migrations\202112071606288_m2.designer.cs">
+      <DependentUpon>202112071606288_m2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112110515381_m88.cs" />
+    <Compile Include="Migrations\202112110515381_m88.designer.cs">
+      <DependentUpon>202112110515381_m88.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112110521304_m9.cs" />
+    <Compile Include="Migrations\202112110521304_m9.designer.cs">
+      <DependentUpon>202112110521304_m9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112130658347_m10.cs" />
+    <Compile Include="Migrations\202112130658347_m10.designer.cs">
+      <DependentUpon>202112130658347_m10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112131221063_m101.cs" />
+    <Compile Include="Migrations\202112131221063_m101.designer.cs">
+      <DependentUpon>202112131221063_m101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112150440373_m111.cs" />
+    <Compile Include="Migrations\202112150440373_m111.designer.cs">
+      <DependentUpon>202112150440373_m111.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201051717242_m18.cs" />
+    <Compile Include="Migrations\202201051717242_m18.designer.cs">
+      <DependentUpon>202201051717242_m18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201301025358_l10.cs" />
+    <Compile Include="Migrations\202201301025358_l10.designer.cs">
+      <DependentUpon>202201301025358_l10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201301049116_nm.cs" />
+    <Compile Include="Migrations\202201301049116_nm.designer.cs">
+      <DependentUpon>202201301049116_nm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202031407141_b.cs" />
+    <Compile Include="Migrations\202202031407141_b.designer.cs">
+      <DependentUpon>202202031407141_b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202031508057_n.cs" />
+    <Compile Include="Migrations\202202031508057_n.designer.cs">
+      <DependentUpon>202202031508057_n.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202052059060_vb.cs" />
+    <Compile Include="Migrations\202202052059060_vb.designer.cs">
+      <DependentUpon>202202052059060_vb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202052102067_m.cs" />
+    <Compile Include="Migrations\202202052102067_m.designer.cs">
+      <DependentUpon>202202052102067_m.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202112021528072_InitialCreate.resx">
+      <DependentUpon>202112021528072_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112021538492_m1.resx">
+      <DependentUpon>202112021538492_m1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112021606265_m11.resx">
+      <DependentUpon>202112021606265_m11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112021609256_m12.resx">
+      <DependentUpon>202112021609256_m12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112071606288_m2.resx">
+      <DependentUpon>202112071606288_m2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112110515381_m88.resx">
+      <DependentUpon>202112110515381_m88.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112110521304_m9.resx">
+      <DependentUpon>202112110521304_m9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112130658347_m10.resx">
+      <DependentUpon>202112130658347_m10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112131221063_m101.resx">
+      <DependentUpon>202112131221063_m101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112150440373_m111.resx">
+      <DependentUpon>202112150440373_m111.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201051717242_m18.resx">
+      <DependentUpon>202201051717242_m18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201301025358_l10.resx">
+      <DependentUpon>202201301025358_l10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201301049116_nm.resx">
+      <DependentUpon>202201301049116_nm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202031407141_b.resx">
+      <DependentUpon>202202031407141_b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202031508057_n.resx">
+      <DependentUpon>202202031508057_n.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202052059060_vb.resx">
+      <DependentUpon>202202052059060_vb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202052102067_m.resx">
+      <DependentUpon>202202052102067_m.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="~/stt.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comforter&family=Lobster&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="~/styleonne/st.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Jay fashio </title>
+    <style>
+
+
+        .carousel-inner > .item > img {
+            height: 480px;
+            width: 100%;
+        }
+
+        .top {
+            top: -20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-default  ">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#click" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+
+                </button>
+
+                <a class="navbar-brand" href="~/JF/Home" style="color: black; font-family: 'Permanent Marker', cursive; font-size: 17px ">Jay Fashio</a>
+                <img src="~/favicon.png" class="navfav" href="~/JayFashio/Home" />
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="click">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="~/JF/sal" class="dropdown-toggle  " id="link" style="color: #c78e2d; font-size: 23px; font-style: oblique; " role="button" aria-haspopup="true" aria-expanded="false">   discount</a>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="#" style="color: #c78e2d; font-size: 23px; font-style: oblique;; " class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Men</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/JF/index">Hoodies</a></li>
+                            <li><a href="~/JF/manj">Jackets</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="~/JF/mant">T-Shirt</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" style="color: #c78e2d; font-size: 23px; font-style: oblique; " class="dropdown-toggle " role="button" aria-haspopup="true" aria-expanded="false">Women</a>
+                        <ul class="dropdown-menu wtop">
+                            <li><a href="~/JF/womh">Hoodies</a></li>
+                            <li><a href="~/JF/womj">Jackets</a></li>
+                            <li><a href="~/JF/womsws">Sweatshirt</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="~/JF/womt">T-Shirt</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" style="color: #c78e2d; font-size: 23px; font-style: oblique; " class="dropdown-toggle abar" role="button" aria-haspopup="true" aria-expanded="false">Kids </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/JF/kh">Hoodies</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="~/JF/kt">T-Shirt</a></li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btns ">Go</button>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="~/Cart/add" style="color: #c78e2d; font-size: 23px; " class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" style="color: #c78e2d; font-size: 23px; font-style: oblique; " class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account   <span class="glyphicon glyphicon-user"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="~/Account/createuser">Register</a></li>
+                            <li role="separator" class="divider"></li>
+                            @if (JayFashio_PL.helper.sessionhelper.isuser)
+                            {
+                                <li><a href="~/Account/logout">logout</a></li>
+                            }
+
+                            else
+                            {
+                                <li><a href="~/Account/login">Login</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container--->
+    </nav>
+    <section style="position:relative">
+        <div class="custom-shape-divider-bottom-1643116646">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+
+        </div>
+    </section>
+        @RenderBody()
+
+        <footer class="container ">
+
+            <div>
+                <h3 style="bottom:15px;font-family: 'Homemade Apple', cursive;" class="hfooter">Design and work of the software development team  </h3>
+            </div>
+
+
+            <div>
+                <a class="btn btn-primary ra" style="background-color: #0e1626;  " href="#!" role="button">
+                    <i class="fa fa-facebook fao "></i>
+                </a>
+                <a class="btn btn-primary ra" style="background-color: #0e1626;  " href="#!" role="button">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+
+        </footer>
+
+</body>
+
+</html>

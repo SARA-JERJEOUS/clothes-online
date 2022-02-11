@@ -1,0 +1,364 @@
+﻿
+.navfav {
+    width: 45px;
+    position: absolute;
+    margin-left: -14%;
+    cursor: pointer;
+    padding: 3px;
+    margin-top: 3px;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 14px 27px;
+}
+
+input.form-control:focus {
+    background-color: #d5a971;
+}
+.btns {
+    background-color: #a7630c;
+}
+
+.btns:hover {
+    background-color: #dd973f;
+}
+.navbar-default .navbar-nav > .open > a:hover {
+    background-color: #E7E7B5;
+}
+.dropdown:hover {
+    background-color: #d5a971
+}
+#link:hover {
+    background-color: #d5a971
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a {
+    background-color: transparent
+}
+
+.navbar-nav > li > .dropdown-menu {
+   
+    margin-top: 0px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 35px;
+    background-color: #e79d1d;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes example {
+    from {
+        transform: rotateX(80deg);
+    }
+
+    to {
+        transform: rotateX(2deg);
+    }
+
+    
+}
+
+
+.dropdown-menu > li > a:hover {
+    background-color: #a7630c;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 35px;
+  
+}
+/* Bootstrap 3 text input with search icon */
+.has-search .form-control-feedback {
+    right: initial;
+    left: 0;
+    color: #ccc;
+}
+
+.has-search .form-control {
+    padding-right: 12px;
+    padding-left: 34px;
+}
+
+.iq1 {
+    height: 90vh;
+    position: relative;
+}
+
+.carousel-indicators li {
+    border: 2px solid green;
+}
+
+.navbar-default {
+    background-color: #f0bb78
+}
+
+.navbar-brand {
+    padding: 15px 57px
+}
+/*style  shape in section 2*/
+.custom-shape-divider-top-1643111699 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1
+}
+
+    .custom-shape-divider-top-1643111699 svg {
+        position: relative;
+        display: block;
+        width: calc(229% + 1.3px);
+        height: 425px;
+        transform: rotateY(180deg);
+    }
+
+    .custom-shape-divider-top-1643111699 .shape-fill {
+        fill: #e68d24;
+    }
+
+body {
+    background-color: #edc38a
+}
+/*sstyle  font in section 2*/
+.htop {
+    position: absolute;
+    top: 25px;
+    left: 31%;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
+}
+
+
+/*section 2 in main page*/
+#part2 {
+    height: 100vh;
+    position: relative;
+}
+
+.row {
+    margin-top: 90px
+}
+/*style btn*/
+.btn-group-sm > .btn, .btn-sm {
+    border-radius: 14px
+}
+
+.center-block {
+ 
+    margin-left: 87px;
+    margin-right: 84px;
+    position: relative;
+    left: -26px;
+}
+
+
+.btn-group-sm > .btn, .btn-sm {
+    padding: 5px 37px;
+}
+
+.btn-secondary {
+    background-color: #28606B;
+    color: snow;
+}
+
+    .btn-secondary:hover {
+        background-color: #28611F;
+        color: snow;
+    }
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.endsection {
+    height: 40vh;
+    position: relative;
+}
+
+.custom-shape-divider-top-1643116461 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1
+}
+
+    .custom-shape-divider-top-1643116461 svg {
+        position: relative;
+        display: block;
+        width: calc(184% + 1.3px);
+        height: 385px;
+        transform: rotateY(180deg);
+    }
+
+    .custom-shape-divider-top-1643116461 .shape-fill {
+        fill: #e78f23;
+    }
+
+.custom-shape-divider-bottom-1643116646 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1
+}
+
+    .custom-shape-divider-bottom-1643116646 svg {
+        position: relative;
+        display: block;
+        width: calc(184% + 1.3px);
+        height: 385px;
+        transform: rotateY(180deg);
+    }
+
+    .custom-shape-divider-bottom-1643116646 .shape-fill {
+        fill: #f6d5ac;
+    }
+
+.counter {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav {
+    margin-left: 21%;
+    margin-bottom: 31px;
+    bottom: 60px;
+    position: absolute;
+    width: 113px;
+}
+
+h2 {
+    position: absolute;
+    margin-left: 41%;
+    margin-top: 24%;
+}
+
+.counter h2 {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 7.8em;
+}
+
+    .counter h2:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 2px #f21040;
+    }
+
+    .counter h2:nth-child(2) {
+        color:#ea6213;
+        animation-name: an;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+@keyframes an {
+    0%,100% {
+        clip-path: polygon(0 2%, 14% 43%, 33% 47%,46% 57%, 56% 63%, 68% 64%, 76% 66%, 85% 62%, 100% 64%, 99% 99%, 1% 99%);
+    }
+
+    50% {
+        clip-path: polygon(0 72%, 12% 66%, 31% 69%, 44% 63%, 60% 64%, 69% 62%, 76% 59%, 86% 50%, 99% 44%, 99% 99%, 1% 99%);
+    }
+}
+
+/*style footer*/
+.sp{
+    
+    border:1px  groove orange;
+    
+}
+.fao {
+    
+ 
+    border-radius: 50%;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.ra {
+    border-radius: 50%;
+    margin-top: 16px;
+    margin-left: 13px;
+    float: right;
+}
+
+.hfooter {
+    top: 52px;
+    position: relative;
+}
+.imgemargin{
+    margin-top:15px;
+}
+
+
+.tdd {
+    font-family: 'Bungee Inline', cursive;
+ 
+}
+
+.btn-success {
+    color: #fff;
+    background-color:#e6ad24;
+    border-color: #edc38a
+}
+
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #aaa13b;
+    border-color: #4c6eae;
+}
+
+
+img {
+    vertical-align: middle;
+    margin-top: 40px;
+}
+.censalary {
+    position: relative;
+    bottom: 133px;
+    z-index: 0;
+    right: 113px;
+}
+.valid {
+    position: absolute;
+    top: 50%;
+    color: #ff0000;
+    border: ridge 3px yellow;
+    width: 19%;
+    height: 30%;
+    animation: mymove 5s infinite;
+}

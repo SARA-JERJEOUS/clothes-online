@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+@using JayFashio_M;
+<p>Use this area to provide additional information.</p>
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th class="v">  First Name  </th>
+            <td>  Last Name  </td>
+            <td>
+                Phone
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>mohammad</td>
+            <td>nazzal</td>
+            <td>079856412</td>
+
+
+        </tr>
+        <tr>
+            <td>sara</td>
+            <td>jerjeous</td>
+            <td>079856412</td>
+
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>sara</td>
+            <td>jerjeous</td>
+            <td>079856412</td>
+
+        </tr>
+    </tfoot>
+</table>
+
+
+@{
+    List<City> name = new List<City>()
+{
+        new City(){CityName="irbed"},
+                new City(){CityName="Amman"},
+                        new City(){CityName="jarash"}
+
+    };
+}
+<ul style="list-style-type: none; ">
+    @for (int i = 0; i < name.Count; i++)
+    {
+        <li>@name[i].CityName  </li>
+
+    }
+
+</ul>
+
+
+<img src="https://play-lh.googleusercontent.com/MvYNOTI5Kl65vt-R2SnoMH1G0WeJOEMm_HOaXtlHDSBGE9VmvdzUbbApPBXXdDZolg" alt="Alternate Text" class="im" />
+<br />
+<br />
+<button style="color:blueviolet;background-color:cadetblue"> Add To Cart   </button>
+<br />
+<br />
+<p>    software  <span style="font-family:Algerian;background-color:aqua">engineer </span> </p>
+
+
